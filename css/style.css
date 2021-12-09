@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@300;400;600&display=swap');
+/* ! */
+html {
+    font-size: 18px;
+}
+/* ! */
+body {
+    font-family: 'Montagu Slab', serif;
+    font-size: 1rem;
+    color: #000;
+}
+
+/* --- */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+/* --- */
+
+/* ! */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+/* ! */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+/* ! */
+.header {
+    padding-top: 1rem;
+}
+/* ! */
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+}
+/* ! */
+.user {
+    display: flex;
+}
+/* ! */
+.user__avatar {
+    height: 60px;
+    width: 60px;
+}
+/*  */
+img {
+    border-radius: 50%;
+}
+/* ! */
+.user__content {
+    padding-left: 10px;
+}
+/* ! */
+.user__name {
+    font-size: 0.88rem;
+    color: #000;
+    font-weight: 700;
+    line-height: 1rem;
+}
+/* ! */
+.user__prof {
+    font-size: 0.6rem;
+    color: #7e1edf;
+}
+/* ! */
+.nav {
+    align-items: center;
+    height: 100%;
+}
+.nav__link {
+    /* --padding: 0.55rem 1.66rem;-- */
+    margin-left: 1.66rem;
+    position: relative;
+
+    font-size: 0.77rem;
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+    /* --border: 2px solid transparent;-- */
+    border-radius: 20px;
+}
+/* !p-elements | хотел сделать кое-что интересное, но не вышло...*/
+/* .nav__link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    z-index: 1;
+} */
+/* !p-elements | */
+/* 000not done */
+.nav__link:hover {
+    border-color: #000;
+}
+/* 000not done */
+/* !BEM - "M" */
+.nav__link--btn {
+    padding: 0.55rem 1.66rem;
+    border: 2px solid #000;
+    transition: background-color .1s linear;
+}
+.nav__link--btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+/* !BEM - "M" */
+
+/* intro */
+.intro {
+    padding-top: 100px;
+}
+
+.intro__inner {
+    background: url("../imgs/chiibi0.jpg") right bottom no-repeat;
+    display: flex;
+    border-bottom: 1px solid rgb(107, 106, 106, 30%);
+    padding-bottom: 120px;
+
+}
+/* !content */
+.intro__content {
+    width: 50%;
+}
+/* !photo */
+.intro__photo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.intro__subtitle {
+    font-weight: 300;
+    font-size: 1.77rem;
+    color: #000;
+}
+
+.intro__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #000;
+}
+
+.intro__text {
+    font-size: 1rem;
+    color: #7e1edf;
+    margin-bottom: 25px;
+}
+/* intro */
+/* ! */
+
+/* social */
+.social {
+    display: flex;
+    margin-bottom: 42px;
+}
+.social__link {
+    text-decoration: none;
+    margin-right: 10px;
+    transition: transform .1s linear;
+}
+.social__link:hover {
+    transform: translateY(-5px);
+}
+/* social */
+/* ! */
+
+/* btn */
+.btn {
+    border-color: #000;
+    display: inline-block;
+    font-size: 0.88rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: background-color .3s linear, box-shadow .2s linear;
+}
+.btn:hover {
+    background-color: #000;
+    color: #fff;
+    box-shadow: 2px 2px 10px #7e1edf;
+}
+/* ! */
+/* ABOUT ME */
+.about {
+    margin: 4.44rem 0;
+}
+.about__inner {
+    display: flex;
+    max-width: 1090px;
+}
+.about__photo, .about__content {
+    width: 50%;
+}
+.about__title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #000;
+    font-weight: 700;
+}
+.about__bigtitle {
+    position: relative;
+    left: -20px;
+    font-size: 2.1rem;
+    color: #7e1edf;
+    font-weight: 700;
+}
+.about__text {
+    margin-top: 1rem;
+    margin-bottom: 2.22rem;
+    font-size: 0.66;
+    color: rgb(54, 54, 54);
+    line-height: 1.5;
+    font-weight: 400;
+}
+.img {
+    display: block;
+    min-width: 100%;
+    height: auto;
+    border: 5px #000 solid;
+}
+.about__content {
+    padding-left: 3.2rem;
+}
+.img__smile {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 700;
+}
+/* ABOUT ME */
+/* ! */
+
+/* --- quotes --- */
+.quotes {
+    padding: 3.77rem 0;
+    position: relative;
+    background-color: #332F30;
+}
+.quotes__item{
+        width: 100%;
+        min-width: 830px;
+        margin: 0 auto;
+}
+.quotes__text {
+    font-size: 2rem;
+    line-height: 1.77rem;
+    color: #fff;
+    text-align: center;
+}
+.quotes__photo1 {
+    margin: 0 auto 0.6rem;
+    height: 103px;
+    width: 103px;
+    border-radius: 50%;
+    border: 3px solid #7e1edf;
+}
+.quotes__author {
+    margin-top: -50px;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+}
+p {
+    margin: 0 0 1rem;
+}
+.quotes__name {
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 700;
+}
+.quotes__book {
+    font-size: 1rem;
+    color: #7e1edf;
+    font-weight: 700;
+}
+/* ! */
+.quotes__clock {
+    width: 15px;
+    height: 15px;
+}
+.quotes__clock--unactive {
+    background-color:  #a051f0;
+}
+
+/* Hobby */
+.hobby {
+    margin-top: 15rem;
+    margin-bottom: 7rem;
+}
+.hobby__header {
+    margin-bottom: 3.8rem;
+    text-align:center;
+}
+.hobby__title {
+    margin-bottom: 0.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+.hobby__text {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #7e1edf;
+}
+
+/* ! */
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
+}
+.articles__col {
+    width: 33%;
+    padding: 0 1rem;
+}
+.articles__item {
+    margin-bottom: 2rem;
+}
+.articles__header {
+    position: relative;
+    margin-bottom: 1.11rem;
+}
+.articles__content {
+    margin-bottom: 2rem;
+}
+.articles__date {
+    border: 2px solid #000;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 77px;
+    height: 77px;
+    background-color: #9231f3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 700;
+}
+.articles__photo {
+    display: block;
+    min-width: 100%;
+    height: auto;
+}
+.articles__title {
+    margin-bottom: 0.4rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+}
+.articles__title--m {
+    color: inherit;
+    text-decoration: none;
+}
+.articles__title--m:hover {
+    text-decoration: underline;
+    color:rgb(16, 110, 187)
+}
+.articles__cat {
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    color: #7e1edf;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.articles__text {
+    font-size: 0.77rem;
+    color: rgb(53, 52, 52);
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+.hobby__footer {
+    text-align: right;
+}
+.hobby__links {
+    font-size: 0.88rem;
+    color: #332F30;
+    text-decoration: underline;
+}
+.hobby__links:hover {
+    text-decoration: none;
+    color:rgb(16, 110, 187)
+}
+/* Hobby */
+/* ! */
+
+/* footer */
+.footer {
+    background-color: #bebdc0;
+    padding: 1.11rem 0;
+}
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__credits {
+    display: flex;
+    align-items: center;
+}
+.footer__copyright {
+    color: #7e1edf;
+    font-weight: 700;
+    padding-right: 0.8rem;
+    margin-right: 1rem;
+    border-right: 1px solid #000;
+}
+.footer__social {
+    display: flex;
+    align-items: center;
+}
+.footer__social_link1 {
+    margin-right: 0.5rem;
+    text-decoration: none;
+}
+.footer__nav {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+.footer__nav-link {
+    margin-left: 1.5rem;
+    color: #7e1edf;
+    text-decoration: none;
+    font-weight: 700;
+}
+.footer__nav-link:hover {
+    
+    text-decoration: underline;
+    color: #fff;
+}
+.footer__nav-link--btn {
+    color: #000;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    border: 2px solid #000;
+    border-radius: 20px;
+    padding: 0.7rem 1rem;
+    font-weight: 700;
+}
+.footer__nav-link--btn:hover {
+    color: #fff ;
+    background-color: #000;
+}
+/* ! */
+
+/* fancy */
+.fancy {
+    color: #7e1edf;
+    font-weight: 700;
+}
+.hero {
+    color: rgb(204, 56, 56);
+    font-weight: 700;
+    font-size: 1rem;
+}
+.aboutYU--1 {
+    color: rgb(20, 85, 182);
+    font-weight: 700;
+}
+.aboutYU--2 {
+    text-align: center;
+    color: #19c07b;
+    font-weight: 700;
+}
+/* !DONE! */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
